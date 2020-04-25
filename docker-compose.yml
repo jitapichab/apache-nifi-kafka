@@ -30,3 +30,9 @@ services:
        NIFI_ZK_CONNECT_STRING: "zookeeper:2181"
        NIFI_ELECTION_MAX_WAIT: "1 min"
        NIFI_ZK_ROOT_NODE: "/nifi"
+  producer:
+    build: ./producer
+    environment:
+      API_COVID: "https://api.covid19api.com/summary"
+      TOPIC: kafka-nifi-src
+      BOOTSTRAP_SERVER: "kafka:9092"
