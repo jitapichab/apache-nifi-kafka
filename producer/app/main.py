@@ -37,7 +37,7 @@ class Worker:
             producer = self.config_producer()
             for data in data_covid['Countries']:
                 self.send_producer_data(producer,data)
-                sleep(5)
+                sleep(1)
         except KafkaError as err:
             logging.info(err)
         except Exception as err:

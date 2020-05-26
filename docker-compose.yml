@@ -36,3 +36,8 @@ services:
       API_COVID: "https://api.covid19api.com/summary"
       TOPIC: kafka-nifi-src
       BOOTSTRAP_SERVER: "kafka:9092"
+  consumer:
+    build: ./consumer
+    environment:
+      TOPIC: kafka-nifi-dst
+      BOOTSTRAP_SERVER: "kafka:9092"
