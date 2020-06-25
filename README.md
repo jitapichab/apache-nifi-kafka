@@ -1,6 +1,6 @@
 # **Apache-Nifi-Kafka**
 
-This project is a example that show how it's possible  connect apache nifi with kafka for consume from Kafka and produce to Kafka. For this example I used a Covid api. 
+This project is an example that shows how it's possible to connect Apache Nifi with Kafka to consume messages from Kafka and produce messages to Kafka. A COVID-19 API was used for this example. 
 
 ## **Architecture of the project**
 
@@ -29,11 +29,11 @@ docker-compose up
 
 ![Nifi website Image](media/apache-nifi-website.png)
 
-4. Upload *nifi-templates/nifi-covid-kafka.xml*  in the Section **Operate**  in the bottom on the page, once the template was uploaded you should  drag the template in the toolbar on the top on the page and select the template uploaded.
+4. Upload *nifi-templates/nifi-covid-kafka.xml*  in the section **operate**  in the bottom on the page, once the template was uploaded you should  drag the template in the toolbar on the top on the page and select the template uploaded.
 
 ![Nifi Template Image](media/nifi-template-uploaded.png)
 
-5. Start the project and you should check if the  __*PublishKafka*__ procesor has received messages.
+5. Start the project and check if the  __*PublishKafka*__ procesor has received messages.
 
 <p align="center">
 <img width="395" height="254" src="media/publishkafka_processor.png">
@@ -48,11 +48,3 @@ docker-compose logs -f consumer
 ```
 
 ![Consumer Logs](media/logs-by-consumer.png)
-
-
-
-
-
-
-
-
