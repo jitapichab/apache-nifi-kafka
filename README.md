@@ -48,3 +48,7 @@ docker-compose logs -f consumer
 ```
 
 ![Consumer Logs](media/logs-by-consumer.png)
+
+## *Explication*
+
+https://medium.com/@jitapichab/apache-nifi-integrate-kafka-to-consume-and-produce-387968b8bd6b
